@@ -1,0 +1,25 @@
+services:
+  app-dev:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: development-build-stage
+    container_name: medium-landing-dev
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    environment:
+      - NODE_ENV=development
+
+  app-prod:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: production-build-stage
+    container_name: medium-landing-prod
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
