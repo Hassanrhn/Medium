@@ -1,0 +1,6 @@
+{
+  "name": "Medium — Human Stories & Ideas",
+  "description": "A clean, minimalist reading and discovery platform for insightful essays, long-form journalism, and ideas that shape the world.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
